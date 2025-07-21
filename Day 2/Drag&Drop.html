@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img id="img1" src="images/JS.png" draggable="true" ondragstart="event.dataTransfer.setData('image',event.target.id)">
+    <img id="img2" src="images/html5.png" draggable="true" ondragstart="event.dataTransfer.setData('image',event.target.id)">
+
+    <div style="border: 2px solid; height: 300px;" ondragover="event.preventDefault()" ondrop="fun(event)">
+
+    </div>
+
+    <script>
+        function fun(event) {
+            
+            event.target.appendChild(document.getElementById(event.dataTransfer.getData('image')))
+        }
+    </script>
+
+</body>
+</html>

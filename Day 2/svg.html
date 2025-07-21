@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+
+
+    <svg style="border:2px solid; width: 480px; height:500px">
+
+        <rect x="100" y="100" width="40" height="40" fill="green" stroke="black" stroke-width="2" stroke-dasharray="6,4"></rect> <!-- default fill = 'black', stroke => border-color, -->
+        <rect x="300" y="100" width="40" height="40" fill="green" stroke="black" stroke-width="2" stroke-dasharray="6,4"></rect>
+        <rect x="100" y="300" width="40" height="40"fill="green" stroke="black" stroke-width="2" stroke-dasharray="6,4"></rect>
+        <rect x="300" y="300" width="40" height="40"fill="green" stroke="black" stroke-width="2" stroke-dasharray="6,4"></rect>
+    
+        <line x1="10" y1="10" x2="70" y2="50" stroke="url(#color3)" stroke-width="4" stroke-linecap="round"></line>
+        <rect x="100" y="10" width="40" height="40"fill="url(#color4)" stroke="black" stroke-width="2" stroke-linejoin="round"></rect>
+        <rect x="150" y="10" width="40" height="40"fill="url(#color2)" stroke="black" stroke-width="2" rx="6" ></rect>
+
+        <circle cx="220" cy="220" r="50" stroke="black" stroke-width="2" stroke-dasharray="8,8" fill="url(#color1)"></circle>
+
+        <ellipse cx="220" cy="220" rx="40" ry="20" fill="pink" stroke="brown"></ellipse>
+
+        <text x="196" y="224" fill="brown" stroke="black" stroke-width="0.4"> youssef</text>
+
+
+        <!-- <polyline points="20,400 60,440 100,380 150,440 100,410 60,420 20,400" fill="cyan" stroke="blue" stroke-width="3"></polyline> -->
+        <!-- <polygon points="20,400 60,440 100,380 150,440 100,410 60,420 " fill="cyan" stroke="blue" stroke-width="3" stroke-linejoin="round"></polygon> -->
+        <polyline points="20,400 60,440 100,380 150,440 100,410 60,420 " fill="cyan" stroke="blue" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></polyline>
+
+        <defs>
+            <linearGradient id="color1" x1="0%" y1="0%" x2="0%" y2="100%"> <!-- top to bottom -->
+                <stop offset="0%" stop-color="brown"></stop>
+                <stop offset="20%" stop-color="pink"></stop>
+                <stop offset="50%" stop-color="white"></stop>
+                <stop offset="80%" stop-color="pink"></stop>
+                <stop offset="100%" stop-color="brown"></stop>
+            </linearGradient>
+
+            <linearGradient id="color2" x1="0%" y1="0%" x2="100%" y2="0%"> <!-- left to right -->
+                <stop offset="0%" stop-color="brown"></stop>
+                <stop offset="20%" stop-color="pink"></stop>
+                <stop offset="50%" stop-color="white"></stop>
+                <stop offset="80%" stop-color="pink"></stop>
+                <stop offset="100%" stop-color="brown"></stop>
+            </linearGradient>
+
+            <linearGradient id="color3" x1="0%" y1="0%" x2="100%" y2="100%"> <!-- top-left to bottom-right -->
+                <stop offset="0%" stop-color="brown"></stop>
+                <stop offset="20%" stop-color="pink"></stop>
+                <stop offset="50%" stop-color="white"></stop>
+                <stop offset="80%" stop-color="pink"></stop>
+                <stop offset="100%" stop-color="brown"></stop>
+            </linearGradient>
+
+            <radialGradient id="color4" cx="50%" cy="50%" r="50%" >
+                <stop offset="0%" stop-color="red"></stop>
+                <stop offset="100%" stop-color="black"></stop>
+            </radialGradient>
+
+        </defs>
+
+
+
+
+    </svg>
+
+
+
+
+</body>
+</html>
