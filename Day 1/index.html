@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- code segmantic -->
+
+    <time datetime="20-07-2025">20-07-2025</time> <br>
+    <meter value="15" min="1" max="100" high="" low=""></meter> <br>
+    <progress></progress>
+    <progress id="p" value="10" max="100"></progress>
+
+    <script>
+        var tag = document.getElementById("p");
+        // while (tag.value <tag.max) {
+        //     tag.value += 1;
+        //     console.log(tag.value);   
+        // }
+        var interval = setInterval(function () {
+            if (tag.value < tag.max) {
+                tag.value += 10;
+                console.log(tag.value);
+            } else {
+                clearInterval(interval);
+            }
+        }, 1000); // Increment every second 1000 milliseconds or second
+    </script>
+
+</body>
+
+</html>
