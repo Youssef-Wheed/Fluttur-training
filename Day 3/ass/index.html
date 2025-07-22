@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- internal style -->
+    <style>
+        .solid {
+            border: 2px solid rgb(238, 228, 228);
+            padding: 10px;
+            margin: 10px;
+            color: beige;
+        }
+
+        .dashed {
+            border: 2px dashed rgb(238, 228, 228);
+            padding: 10px;
+            margin: 10px;
+            color: beige;
+        }
+
+        .newspaper {
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 2px solid #ffffff;
+            border: 2px solid rgb(238, 228, 228);
+            padding: 10px;
+            margin: 10px;
+            color: beige;
+        }
+
+        .important {
+            color: rgb(255, 255, 255) !important;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-box">
+        <h2>This div</h2>
+    </div>
+
+    <!--HEX-->
+    <p style="color: #d3d3d3; font-size: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quaerat
+        consequatur beatae
+        nesciunt? Architecto vel, dicta, sapiente eum repudiandae quasi quas deserunt odio nemo velit eveniet ea tenetur
+        a illo!</p>
+
+    <!-- RGB -->
+    <p style="color: rgb(0, 128, 255);font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+        ratione
+        mollitia. Pariatur eos praesentium sed. Porro vel fugit autem perferendis illum sint, quasi eos, animi eaque
+        impedit facere fugiat culpa.</p>
+
+    <!-- HSL -->
+    <p style="color: hsl(120, 100%, 25%);font-size: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Facere eligendi
+        porro expedita omnis, hic laboriosam asperiores. Tempora itaque consequuntur iusto enim, repudiandae odio
+        asperiores, nulla beatae dolores, laborum illo ut!</p>
+
+    <div class="solid"> solid border</div>
+    <div class="dashed"> dashed border</div>
+
+    <div class="newspaper">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo odio eu odio gravida, ac malesuada
+        est placerat. Nulla facilisi. Morbi nec magna magna. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo
+        odio eu odio gravida, ac malesuada
+        est placerat. Nulla facilisi. Morbi nec magna magna. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo
+        odio eu odio gravida, ac malesuada
+        est placerat. Nulla facilisi. Morbi nec magna magna. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo
+        odio eu odio gravida, ac malesuada
+        est placerat. Nulla facilisi. Morbi nec magna magna. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas.
+    </div>
+
+    <div class="important override">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nemo? Nisi eaque ut porro aliquid! Aperiam
+        atque nulla accusamus repudiandae voluptas error perspiciatis eos neque. Libero a perferendis nobis nihil!
+    </div>
+
+   
+
+
+</body>
+
+</html>

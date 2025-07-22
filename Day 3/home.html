@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- external style -->
+    <link rel="stylesheet" href="styleSheet.css">
+
+    <!-- internal style -->
+    <style>
+        /* selector { property: value; } */
+        h2 {
+            background-color: burlywood;
+        }
+
+        /* #idvalue { properties } */
+        #para {
+            font-size: 10px;
+            width: 40%;
+            height: 100px;
+
+            /* transform: scale(x,y); */
+            /* transform: scale(1, 2); */
+            /* 1 => the same width, 2 => 2*height */
+
+            /* half width and half height */
+            /* transform: scale(0.5,0.5);  */
+            /* width & height*/
+            /* transform: scale(0.5);  */
+            /* transform: skewX(10deg); */
+            /* transform: skewY(91deg); */
+            /* transform: skew(1deg,10deg); */
+            /* transform: matrix(scaleX(), skewY(),skewX(),scaleY(),translateX(), translateY()); */
+
+
+            /* transition */
+            transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+
+
+            /* transition: width 4s, height 8s, transform 2s; */
+            
+
+        }
+        #para:hover{
+            width: 100%;
+             /*height: 200px;
+            transform: rotate(180deg); */
+        }
+
+        /* p{
+            font-size: 30px !important;
+        } */
+
+        /* .classvalue {} */
+        .section {
+            border: 2px solid;
+        }
+
+        .spanH2 {
+            height: 400px;
+            column-count: 2;
+            column-gap: 60px;
+            column-rule: 4px double rgba(255, 255, 255, 0.438);
+        }
+
+        div>p {
+            /* direct child*/
+        }
+
+        div h4 {
+            color: teal;
+        }
+
+        /* direct sibling */
+        /* h4+h5{ 
+            color: blue;
+        } */
+        h4~h5 {
+            color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- inline style (unique) -->
+    <h2 style="color: saddlebrown; background-color: aqua;">
+        welcome
+    </h2>
+    <div class="section">
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odit aut at veniam nulla! Nihil
+            tempore omnis
+            facere rerum ipsam consectetur accusantium quis numquam consequatur velit aspernatur eum, doloribus
+            asperiores.</p>
+        <!-- <h4>h4 in div</h4>
+        <h5>h5 after h4</h5>
+        <h5>h5 after h5</h5>
+        <h6>h6 after h5</h6> -->
+    </div>
+    <h5>h5 after h5</h5>
+
+    <!-- <h2 class="spanH2"> hello </h2> -->
+    <span class="section spanH2" style="display: block;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non veritatis, accusantium ad praesentium cum
+        officia facere veniam omnis repellendus eum iste odio hic fugit, recusandae, explicabo in dolores architecto!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsum, sint, sapiente perspiciatis doloremque
+        nostrum saepe quis debitis pariatur quibusdam temporibus quos dolorem eaque illum aliquid dolorum? Nostrum,
+        numquam dolor.
+    </span>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas, delectus nisi perferendis
+        consectetur modi reprehenderit, ad porro minima facilis, molestias voluptate at accusantium dolor dicta eaque
+        ipsum similique commodi?
+    </p>
+
+    <!-- <form>
+        <input style="width: 60%;" type="text" name="username" id="US" placeholder="enter your name">
+        <input type="email" name="email" id="EM" placeholder="enter your email">
+        <input type="password" name="password" id="PASS">
+        <input type="submit" value="test">
+    </form>
+
+    <a href="https://www.w3schools.com/">w3school</a>
+    <a href="test.html">test document</a> -->
+
+
+</body>
+
+</html>

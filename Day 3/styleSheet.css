@@ -1,0 +1,120 @@
+@import url('testSheet.css');
+
+
+
+
+h2 {
+    background-color: silver;
+    color: blue;
+}
+
+h2 {
+    color: yellow;
+    /* overwrite */
+}
+
+
+/* tagname[attribute=value]{} */
+[name] {
+    background-color: coral;
+}
+
+[name='password'] {
+    background-color: yellowgreen;
+}
+
+[placeholder~='email'] {
+    background-color: skyblue;
+}
+
+[placeholder~='email']:focus {
+    color: antiquewhite;
+}
+
+[type*='t'] {
+    /* background-color: rgb(134, 206, 134);  */
+    background-color: #c68740;
+}
+
+/* [href^='http']{
+    color: tomato;
+    text-decoration: none;
+}
+[href$='.html']{
+    color: brown;
+} */
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: steelblue;
+}
+
+a:active {
+    color: coral;
+}
+
+a:visited {
+    color: gray;
+}
+
+
+input {
+    -webkit-width: 300px;
+    -moz-width: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 0px;
+    padding-left: 8px;
+
+    border-width: 5px;
+    border-style: double;
+    border-color: whitesmoke;
+    /*  shorthand property */
+    /* border: 2px brown dotted; */
+}
+
+a {
+    /* border-width: 3px;
+    border-style: dashed; */
+    border-left-width: 3px;
+    border-left-style: dashed;
+    border-right: 3px dashed;
+    text-decoration: line-through;
+}
+
+
+/* bachground */
+/* gradient */
+p {
+    background: linear-gradient(red, yellow, green);
+    /* background: linear-gradient(to bottom,  red,yellow,green); */
+    background: linear-gradient(to right, red, yellow, green, blue, coral);
+    background: linear-gradient(to bottom right, red, yellow, green);
+    background: linear-gradient(to bottom right, red, yellow, green);
+
+
+}
+
+span {
+    background-image: url('images/img2.jpg');
+    background-repeat: no-repeat;
+    /* background-position: bottom right; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h2{
+    /* transform: translate(x,y); */
+    /* transform: translate(60px,100px); */
+    /* transform: translate(60px,0px);
+    transform: translate(60px); */
+    transform: translateY(100px);
+    transform: rotate(3deg); /*clockwise*/
+    transform: rotate(-3deg); /*counter-clockwise*/
+    
+
+}
