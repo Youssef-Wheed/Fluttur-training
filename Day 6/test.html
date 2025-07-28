@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <h1> welcome </h1> -->
+
+
+    <script>
+
+        ///////////// location object
+        // document.writeln(location.href, '<br>','<br>')
+        // document.writeln(location.search, '<br>','<br>')
+        // document.writeln(location.host, '<br>','<br>')
+        // document.writeln(location.hostname, '<br>','<br>')
+        // document.writeln(location.port, '<br>','<br>')
+        // document.writeln(location.protocol, '<br>','<br>')
+        var params = new URLSearchParams(location.search)
+        var name = params.get('username')
+        document.writeln('welcome,' +' ' + name)
+        
+    </script>
+    
+</body>
+</html>
