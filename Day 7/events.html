@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div onclick="console.log(event);" style="border: 2px solid;height: 160px;">
+        <span>
+            <h1 onclick="console.log(event);" style="border: 2px solid;"> header</h1>
+        </span>
+    </div>
+    <br>
+    <p onmousedown="console.log('mouse down');" onmouseup="console.log('mouse up');"
+        onmouseover="console.log('mouse over');" onmouseleave="console.log('mouse leave');"
+        onmousemove="console.log(event.clientX+', '+ event.clientY);">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit quo beatae voluptates quas fugiat. Rerum
+        dicta, mollitia sapiente nemo ipsa eveniet voluptas dolor quis eum vero illum blanditiis temporibus?
+    </p>
+    <br> -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <br>
+    <form>
+        <input type="text " onkeydown="console.log('key Down');" onkeyup="console.log('key up');"
+            onkeypress="console.log('key press');">
+        <input type="text" onchange="changeFun(event)" onfocus="testThis(this)" onblur="testBlur(this)" oninput="console.log(this.value);
+        ">
+    </form>
+
+<p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <button onclick="scrollFun()" style="position: fixed; right:40px; bottom:40px;">scroll</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorem autem repellendus asperiores sequi, ipsa consequuntur dicta laboriosam commodi voluptates maxime explicabo illum odit animi reprehenderit neque tempora soluta? Sunt!
+    </p>
+
+
+    <script>
+        // onload= fun
+        onload = () => {
+            function changeFun(e) {
+                console.log(e);
+
+            }
+            function testThis(obj) {
+                obj.style.width = '300px'
+                console.log(obj);
+                //this.blur();
+            }
+            function testBlur(t) {
+                document.writeln(t.value)
+            }
+
+            onresize=sizeFun
+            function sizeFun() {
+                console.log(window.innerWidth);
+            }
+            onscroll=()=>{
+                console.log('scrolling');
+            }
+
+            
+        }
+        function scrollFun() {
+                // scrollTo(x,y)
+                // scrollTo(0,100) // => y=100
+                scrollBy(0,100) // => y+=100
+            }
+
+    </script>
+</body>
+
+</html>

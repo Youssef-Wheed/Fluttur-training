@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <canvas id="myCanvas" style="border: 2px solid;" width="400" height="500"></canvas>
+
+
+    <script>
+        console.log(document.getElementById('myCanvas'));
+        var canvas = document.getElementById('myCanvas')
+        var pen = canvas.getContext('2d')
+
+        // rectangles
+        var linearGrad = pen.createLinearGradient(0, 0, 0, 100)
+        linearGrad.addColorStop(0, 'red')
+        linearGrad.addColorStop(1, 'blue')
+        pen.fillStyle=linearGrad;
+        pen.fillRect(2, 2, 100, 70)
+        var radialGrad = pen.createRadialGradient(150, 50, 1, 150, 50, 60)
+        radialGrad.addColorStop(0, 'red')
+        radialGrad.addColorStop(1, 'blue')
+        pen.fillStyle= radialGrad
+        pen.fillRect(104, 2, 100, 70)
+        // pen.strokeRect(104, 2, 100, 70)
+        
+
+        // clearing
+        // canvas.width = canvas.width
+        pen.clearRect(70, 10, 50, 50)
+        pen.font='10px Arial'
+        // pen.font='40px Arial'
+        pen.fillStyle = 'green'
+        pen.fillText('marwa mohamed', 71, 41, 48)
+        // pen.fillText('marwa mohamed', 71, 41)
+        // pen.strokeText('marwa mohamed', 71, 41)
+
+        // pen.clearRect(0, 0, canvas.width, canvas.height)
+
+        // paths
+        pen.beginPath();
+        pen.moveTo(30, 90); // start Point
+        pen.lineTo(60, 150);
+        pen.lineTo(100, 50);
+        pen.lineTo(150, 100);
+        pen.lineTo(30, 90);
+        // pen.fill();
+        pen.fillStyle='red'
+        pen.stroke();
+        pen.closePath();
+
+        pen.beginPath();
+        pen.moveTo(40, 200); // start point
+        pen.lineTo(20, 180);
+        pen.strokeStyle='blue';
+        pen.lineWidth = 4;
+        pen.stroke();
+        pen.closePath();
+
+
+    </script>
+
+</body>
+
+</html>
