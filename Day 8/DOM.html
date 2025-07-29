@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #m {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="img1" src="images/img1.jpg" width="100">
+
+    <h1> first header</h1>
+    <h1 id="head2"> second header </h1>
+
+    <img name="image2" src="images/img2.jpg" width="100">
+
+    <p id="P" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <!-- <p class="para">Nostrum nemo quae autem sint nam asperiores. </p>
+    <p class="para">eaque sed placeat incidunt atque distinctio pariatur. </p>
+    <p class="para">inventore commodi eius culpa corrupti obcaecati deserunt similique. </p> -->
+
+    <form action="">
+        <label for="">username</label>
+        <input type="text" name="" >
+        <br>
+        <label for="">password</label>
+        <input type="password" name="" >
+        <br>
+        <input type="submit" value="login">
+    </form>
+    <br><br>
+
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+
+    <button onclick="changeImg()">change images</button>
+    <br>
+    <img name="image3" src="images/img4.jfif" width="100">
+
+    <script>
+        // console.log(document.getElementsByTagName('h1'));
+        // console.log(document.getElementsByTagName('h1').length);
+        var headers = document.getElementsByTagName('h1');
+
+        // headers[0].innerHTML = 'welcome js'; // replace value (edit)
+        // headers[0].innerHTML += ', welcome js'; // add value (edit)
+        // headers[0].innerText += ', welcome js'; // add value (edit)
+        headers[0].innerHTML += '<mark id="m"> welcome js </mark>'; //
+        // headers[0].innerText += '<mark id="m"> welcome js </mark>'; // 
+
+
+        // for (const h of headers) {
+        //     console.log(h);
+        // }
+        // for (const index in headers) { // index in collection
+        //     console.log(headers[index]); 
+        // }
+
+        // console.log(document.getElementById('head2'));
+        // var h2 = document.getElementById('head2');
+        // h2.style.border = '2px dashed blue'
+        // h2.style.backgroundColor = 'cyan'
+
+
+        var paras = document.getElementsByClassName('para')
+
+        for (const key in paras) {
+            // console.log(Number(key)+1);
+            var num = Number(key) + 1;
+            paras[key].innerHTML += num;
+            if (num % 2 != 0) {
+                paras[key].style.color = 'green';
+            }
+            else {
+                paras[key].style.color = 'brown';
+            }
+            if (key == paras.length - 1) {
+                break;
+            }
+        }
+
+        // paras[1].style.display = 'none';
+
+
+        // document.querySelector('#m').style.display = 'none';
+
+        // console.log(document.querySelectorAll('.para'));
+
+
+        // console.log(document.images);
+        var imgs = document.images;
+        // var img = imgs[0]; // index
+        // var img = imgs['img1']; // id
+        var img = imgs.img1; // id
+        // var img = imgs.image2; // name
+        // console.log(img);
+
+
+        var src = [] // ['images/img1.jpg', 'images/img2.jpg', 'images/img4.jfif']
+        for (const img of imgs) {
+            // console.log(img.src);
+            // var source = img.src; // get url
+            // document.getElementById('P').innerHTML+=`<img src="${img.src}" width="100">`
+            var source = img.getAttribute('src') // get attribute value
+            src.push(source)
+        }
+        // console.log(src);
+
+
+        function changeImg() {
+            for (const img of imgs) {
+                var rand = Math.floor(Math.random() * imgs.length) // index [0,1,2]
+                // console.log(rand);
+
+                img.setAttribute('src', src[rand])
+            }
+        }
+
+        var links = document.links;
+        for (const link of links) {
+            link.style.textDecoration = 'none';
+            link.style.display = 'block';
+            link.style.border = '2px solid gray';
+            link.style.marginBottom = '10px';
+            link.style.paddingLeft = '10px'
+        }
+
+
+        // var forms = document.forms;
+        // console.log(forms);
+        // console.log(forms[0]);
+        // console.log(forms[0][0]); // first element (input)
+        // console.log(forms[0][1]); // second element (input)
+        // console.log(forms[0].elements); // (inputs)
+        // console.log(forms[0].elements[0]); // first element (input)
+        // console.log(forms[0].children); // (all tags)
+
+
+        ///////////////// create tag
+        var markTag = document.createElement('mark');
+        markTag.textContent = 'welcome js';
+        markTag.style.color = 'blueviolet';
+        markTag.setAttribute('id', 'm')
+
+        headers[1].append(markTag)
+        
+        console.log(markTag);
+        
+
+    </script>
+
+</body>
+
+</html>
