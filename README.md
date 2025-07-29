@@ -1,239 +1,152 @@
-# Fluttur training Bootcamp  🚀
+# Fluttur Training Bootcamp 🚀
 
-```This repository documents my progress during the first 8 days of the Web Development Bootcamp. Below is a detailed breakdown of what I have learned and practiced so far.```
+*This repository documents my progress during the Fluttur training. It includes all assignments, demos, and code samples completed during the course, provided by ITI.*
 
-* * *
+---
 
-## 🗓️ Day 1: Introduction to HTML
+## 🗓️ Day 1: HTML Fundamentals
 
-* *   Basic structure of an HTML document (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)
-*     
-* *   Text tags: `<h1>` to `<h6>`, `<p>`, `<br>`, `<hr>`
-*     
-* *   Formatting tags: `<b>`, `<i>`, `<u>`, `<mark>`, `<small>`, `<strong>`, `<em>`
-*     
-* *   Links: `<a href="">`
-*     
-* *   Images: `<img src="" alt="">`
-*     
-* *   Lists:
-*     
-*     * *   Ordered lists: `<ol>`, `<li>`
-*     *     
-*     * *   Unordered lists: `<ul>`, `<li>`
-*     *     
-* *   Tables: `<table>`, `<tr>`, `<td>`, `<th>`
-*     
-* *   Forms:
-*     
-*     * *   Input types: text, email, password, submit, checkbox, radio, textarea, select
-*     *     
-*     * *   Labels and form structure
-*     *     
+### Covered Topics:
 
-* * *
+* Basic structure of an HTML document:
 
-## 🎨 Day 3: Introduction to CSS
+  * `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
+* Text Elements:
 
-* *   Ways to apply CSS:
-*     
-*     * *   Inline
-*     *     
-*     * *   Internal `<style>`
-*     *     
-*     * *   External `.css` files
-*     *     
-* *   Selectors:
-*     
-*     * *   Element selector
-*     *     
-*     * *   Class selector `.class`
-*     *     
-*     * *   ID selector `#id`
-*     *     
-* *   Colors: name, HEX, RGB, HSL
-*     
-* *   Box model:
-*     
-*     * *   `margin`, `padding`, `border`
-*     *     
-* *   Backgrounds:
-*     
-*     * *   `background-color`
-*     *     
-*     * *   `background-image`
-*     *     
-*     * *   `background-position`, `background-size`, `background-repeat`
-*     *     
-* *   Hover and transition effects
-*     
-* *   Basic styling for buttons and inputs
-*     
+  * Headings: `<h1>` to `<h6>`, Paragraphs `<p>`, Line Break `<br>`, Horizontal Rule `<hr>`
+* Text Formatting:
 
-* * *
+  * Bold `<b>`, Italic `<i>`, Underline `<u>`, Mark `<mark>`, Small `<small>`, Strong `<strong>`, Emphasis `<em>`
+* Hyperlinks using `<a href="">`
+* Images using `<img src="" alt="">`
+* Lists:
 
-## 💻 Days 4–8: JavaScript (JS) & DOM
+  * Ordered Lists: `<ol>`, `<li>`
+  * Unordered Lists: `<ul>`, `<li>`
+* Tables: `<table>`, `<tr>`, `<th>`, `<td>`
+* Forms:
 
-### 🔹 Basic JavaScript Concepts
+  * Inputs: text, email, password, submit, checkbox, radio
+  * Textarea, Select dropdowns
+  * Form labels and fieldsets
 
-* *   Variables: `var`, `let`, `const`
-*     
-* *   Data types: String, Number, Boolean, Array, Object
-*     
-* *   Operators: `+`, `-`, `*`, `/`, `%`, `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
-*     
-* *   Conditional statements: `if`, `else if`, `else`, `switch`
-*     
-* *   Loops: `for`, `while`
-*     
-* *   Functions:
-*     
-*     * *   Declaration
-*     *     
-*     * *   Expression
-*     *     
-*     * *   Arrow functions
-*     *     
-*     * *   Parameters, default values, return statements
-*     *     
+---
 
-### 🔹 Built-in JS Functions
+## 🎨 Day 3: CSS Introduction
 
-* *   `parseInt()`, `parseFloat()`, `Number()`
-*     
-* *   `isNaN()`, `isFinite()`
-*     
-* *   `prompt()`, `alert()`, `confirm()`
-*     
-* *   `console.log()`
-*     
-* *   `eval()`
-*     
+### Covered Topics:
+
+* CSS Implementation Methods:
+
+  * Inline styles
+  * Internal `<style>` blocks
+  * External `.css` files
+* Selectors:
+
+  * Element, Class `.class`, ID `#id`
+* Color formats: Named colors, HEX, RGB, HSL
+* Box Model:
+
+  * Margin, Padding, Border
+* Background properties:
+
+  * `background-color`, `background-image`, `background-size`, `background-repeat`
+* Transitions and hover effects
+* Button and form input styling
+
+---
+
+## 💻 Days 4–8: JavaScript & DOM Mastery
+
+### 🔹 JavaScript Basics
+
+* Variables: `var`, `let`, `const`
+* Data Types: String, Number, Boolean, Array, Object
+* Operators: Arithmetic, Comparison, Logical
+* Conditional Statements: `if`, `else if`, `else`, `switch`
+* Loops: `for`, `while`
+* Functions:
+
+  * Declarations, Expressions, Arrow Functions
+  * Parameters and Return Values
+
+### 🔹 Built-in Functions
+
+* Type Conversion: `parseInt`, `parseFloat`, `Number`
+* Validation: `isNaN`, `isFinite`
+* UI Prompts: `prompt`, `alert`, `confirm`
+* Logging: `console.log`
 
 ### 🔹 Arrays & Objects
 
-* *   Creating arrays and objects
-*     
-* *   Accessing elements with indexes or keys
-*     
-* *   Looping through arrays using `for` loops
-*     
-* *   Nested objects and arrays
-*     
+* Declaration, Access, Iteration
+* Nested Structures
 
-### 🔹 Working with Events
+### 🔹 Events Handling
 
-* *   Mouse events: `onclick`, `onmouseover`, `onmouseleave`, `onmousedown`, `onmouseup`, `onmousemove`
-*     
-* *   Keyboard events: `onkeydown`, `onkeyup`, `onkeypress`
-*     
-* *   Focus & blur: `onfocus`, `onblur`
-*     
-* *   `addEventListener()`
-*     
+* Mouse Events: `onclick`, `onmouseover`, `onmousedown`, `onmouseup`, etc.
+* Keyboard Events: `onkeydown`, `onkeyup`, `onkeypress`
+* Focus & Blur Events
+* `addEventListener` usage
 
 ### 🔹 DOM Manipulation
 
-* *   `document.getElementById()`, `querySelector()`
-*     
-* *   `.innerHTML`, `.textContent`, `.value`
-*     
-* *   Changing styles dynamically with `.style`
-*     
-* *   Creating elements using `document.createElement()`, `appendChild()`
-*     
+* Selectors: `getElementById`, `querySelector`
+* Modifying Content: `innerHTML`, `textContent`, `value`
+* Styling via `.style`
+* Creating and Appending Elements
 
 ### 🔹 Timers
 
-* *   `setTimeout()`, `clearTimeout()`
-*     
-* *   `setInterval()`, `clearInterval()`
-*     
+* `setTimeout`, `clearTimeout`
+* `setInterval`, `clearInterval`
 
 ### 🔹 BOM (Browser Object Model)
 
-* *   `window.open()`, `window.close()`
-*     
-* *   `navigator`, `screen`, `location`
-*     
-* *   Getting geolocation and opening Google Maps
-*     
+* Access to `window`, `location`, `screen`, `navigator`
+* Geolocation and redirection with `window.location`
 
 ### 🔹 Form Validation
 
-* *   HTML5 validation with `required`, `type="email"`
-*     
-* *   Custom JavaScript validation:
-*     
-*     * *   Matching password and repeat password
-*     *     
-*     * *   Input length validation
-*     *     
-*     * *   Checkbox checked
-*     *     
-*     * *   Showing error messages with conditions
-*     *     
+* HTML5 Attributes: `required`, `type="email"`
+* Custom Validations:
+
+  * Password confirmation
+  * Input length restrictions
+  * Checkbox verification
+  * Dynamic error messages using JavaScript
 
 ### 🔹 Canvas API
 
-* *   Drawing using `getContext("2d")`
-*     
-* *   `fillRect()`, `strokeRect()`, `clearRect()`
-*     
-* *   Gradients: `createLinearGradient()`, `createRadialGradient()`
-*     
-* *   Drawing shapes with `arc()`, `moveTo()`, `lineTo()`, `stroke()`, `fill()`
-*     
-* *   Writing text with `fillText()`
-*     
+* Drawing faces with:
 
-### 🔹 Mini Projects Completed
+  * `arc`, `lineTo`, `moveTo`, `stroke`, `fill`
+  * `createLinearGradient`, `createRadialGradient`
+  * `fillText` for name label
 
-* *   Registration form with:
-*     
-*     * *   Form fields and validation
-*     *     
-*     * *   Redirect to “Thank You” page
-*     *     
-*     * *   Live feedback on inputs
-*     *     
-* *   Dynamic clock using `setInterval()`
-*     
-* *   Random JS tips alert with start/stop buttons
-*     
-* *   Face drawing (Happy & Sad) using Canvas
-*     
-* *   Event tracker that logs keyboard/mouse activity
-*     
+### 🔹 Projects Built:
 
-* * *
+* Registration Form:
 
-## ✅ What's Next?
+  * Fields with validation and redirect to a thank-you page
+* Live Clock with Start/Stop functionality
+* Random JavaScript tips using `setInterval` & alert
+* Face Drawing using Canvas (Happy & Sad)
+* Input Tracker for keyboard and mouse actions
 
-From Day 9 onward, I will dive deeper into:
+---
 
-* *   More advanced DOM manipulation
-*     
-* *   Form error handling and UX
-*     
-* *   JavaScript projects (To-Do List, Calculator, etc.)
-*     
-* *   Intro to ES6 features
-*     
-* *   Working with localStorage/sessionStorage
-*     
-* *   APIs and JSON
-*     
+### Folder Structure
 
-* * *
+```
+.
+├── index.html
+├── script.js
+├── style.css
+├── thanks.html
+└── README.md
+```
 
-Feel free to explore the source files and follow along! ✨  
-📁 `index.html`  
-📁 `script.js`  
-📁 `style.css`
+---
 
-* * *
-
-🧑‍💻 Made by: Youssef Wheed
-
-Paste your rich text content here. You can paste directly from Word or other rich text sources.
+Made with passion and code by **Youssef Wheed** ✨
