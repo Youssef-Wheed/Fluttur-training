@@ -41,9 +41,9 @@ class Employee {
   // Override hashCode
   @override
   int get hashCode =>
-      id.hashCode ^ name.hashCode ^ email.hashCode ^ address.hashCode;
+      id.hashCode & name.hashCode & email.hashCode & address.hashCode;
 
-  // toString() → for readable employee info
+  // toString() 
   @override
   String toString() {
     return '''

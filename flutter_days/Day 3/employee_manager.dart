@@ -1,16 +1,16 @@
 import 'employee.dart';
 
 class EmployeeManager {
-  // Step 1: Singleton Implementation
+  //  Singleton Implementation
   static final EmployeeManager _instance = EmployeeManager._internal();
 
-  // Step 2: Private constructor
+  //  Private constructor
   EmployeeManager._internal();
 
-  // Step 3: Public factory to access the instance
+  //  Public factory to access the instance
   factory EmployeeManager() => _instance;
 
-  // Step 4: Private list of employees
+  //  Private list of employees
   final List<Employee> _employees = [];
 
   // Add employee
@@ -25,7 +25,7 @@ class EmployeeManager {
     print('Employee with ID $id removed (if existed).');
   }
 
-  // List all employees (for testing/demo)
+  // List all employees 
   void listEmployees() {
     if (_employees.isEmpty) {
       print('No employees found.');
@@ -37,6 +37,6 @@ class EmployeeManager {
     }
   }
 
-  // Optional: Expose the list (read-only)
+  // Optional: Expose the listed employees
   List<Employee> get employees => List.unmodifiable(_employees);
 }

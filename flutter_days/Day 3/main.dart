@@ -1,7 +1,7 @@
 import 'address.dart';
 import 'employee.dart';
 import 'employee_manager.dart';
-import 'dart:convert'; // for jsonEncode, jsonDecode
+import 'dart:convert'; 
 
 void main() {
   print('Employee Management System Started');
@@ -32,7 +32,7 @@ void main() {
     address: address2,
   );
 
-  // Get Singleton Manager Instance
+  //  Singleton Manager Instance
   var manager = EmployeeManager();
   // Add Employees
   manager.addEmployee(emp1); // Employee "Youssef Gendy" added.

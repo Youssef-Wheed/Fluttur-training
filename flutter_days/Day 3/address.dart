@@ -30,7 +30,7 @@ class Address {
 
   // Override hashCode
   @override
-  int get hashCode => street.hashCode ^ city.hashCode ^ postalCode.hashCode;
+  int get hashCode => street.hashCode & city.hashCode & postalCode.hashCode;
 
   // Custom format for display
   String formatAddress(String name_Emp) {
